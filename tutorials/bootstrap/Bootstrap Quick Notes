@@ -1,0 +1,53 @@
+Bootstrap Quick Notes
+=====================
+
+Imports:
+
+Buttons:
+<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+
+Modals:
+* Create Dialog
+<div id="x-modal-id" class="x-modal-class modal fade" role=dialog>
+
+<div class="modal-content">
+	<div class="modal-header">
+	  <button type="button" class="close" data-dismiss="modal">&times;</button>
+	  <h4 class="modal-title">Modal Header</h4>
+	</div>
+	<div class="modal-body">
+		  <span class="input-group-addon">
+		    <span class="glyphicon glyphicon-envelope"></span>
+		  </span>
+		  <input class="form-control" type="text" name="fullName" id="fullName" placeholder="Full Name">
+		</div>
+		<div class="input-group input-group-lg">
+		  <span class="input-group-addon">
+		    <span class="glyphicon glyphicon-envelope"></span>
+		  </span>
+		  <input class="form-control" type="text" name="email" id="email" placeholder="Email address">
+		</div>
+		<div class="input-group input-group-lg">
+		  <span class="input-group-addon">
+		    <span class="glyphicon glyphicon-lock"></span>
+		  </span>
+		  <input class="form-control" type="password" name="password" id="password" placeholder="Password">
+		</div> 
+
+	</div>
+	<div class="modal-footer">
+	    <button type="button" id="btn_create_account" class="btn btn-primary">Create Account</button>
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	</div>
+</div>
+
+* Dismiss Dialog
+data-dismiss="modal" to your close button
+
+* Dismiss after event/ajax call
+$(#modal-id).modal('dismiss');
+
+* Modal methods
+$('#myModal').modal('toggle');
+$('#myModal').modal('show');
+$('#myModal').modal('hide');
